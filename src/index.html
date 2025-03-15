@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갓생 근육 계획표</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>갓생 근육 계획표</h1>
+            <div class="date-container">
+                <p>오늘: <span id="current-date"></span> <span id="current-day"></span></p>
+            </div>
+        </header>
+        
+
+        <section class="workout-plan">
+            <h2>주간 운동 계획</h2>
+            <div class="workout-tabs">
+                <button class="workout-tab-btn" data-day="monday">월요일</button>
+                <button class="workout-tab-btn" data-day="tuesday">화요일</button>
+                <button class="workout-tab-btn" data-day="wednesday">수요일</button>
+                <button class="workout-tab-btn" data-day="thursday">목요일</button>
+                <button class="workout-tab-btn" data-day="friday">금요일</button>
+                <button class="workout-tab-btn" data-day="saturday">토요일</button>
+                <button class="workout-tab-btn" data-day="sunday">일요일</button>
+            </div>
+            
+            <div class="workout-content">
+                <div class="workout-tab-content" id="monday">
+                    <h3>월요일: 가슴 + 삼두 + 코어</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 워밍업 (6:25-6:40)</h4>
+                        <ol>
+                            <li><strong>목 회전</strong>: 각 방향으로 10회씩 (목 근육 이완)</li>
+                            <li><strong>어깨 돌리기</strong>: 앞/뒤 각 10회씩 (어깨 관절 활성화)</li>
+                            <li><strong>팔 크로스 스트레칭</strong>: 각 팔 15초씩 (가슴, 어깨 스트레칭)</li>
+                            <li><strong>벽 가슴 스트레칭</strong>: 각 팔 15초씩 (대흉근 스트레칭)</li>
+                            <li><strong>가벼운 푸시업</strong>: 10-15회 (가슴, 삼두 워밍업)</li>
+                            <li><strong>팔 스윙</strong>: 앞/뒤 각 20회 (어깨 관절 워밍업)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>본 운동 (6:40-7:45)</h4>
+                        <ol>
+                            <li><strong>바벨 벤치 프레스</strong>: 5세트 x 6-8회</li>
+                            <li><strong>인클라인 덤벨 프레스</strong>: 4세트 x 8-10회</li>
+                            <li><strong>딥스</strong>: 3세트 x 최대 반복</li>
+                            <li><strong>케이블 플라이</strong>: 3세트 x 10-12회</li>
+                            <li><strong>클로즈 그립 벤치 프레스</strong>: 4세트 x 8-10회</li>
+                            <li><strong>코어 운동</strong>:
+                                <ul>
+                                    <li><strong>플랭크</strong>: 3세트 x 30-60초</li>
+                                    <li><strong>러시안 트위스트</strong>: 3세트 x 15회 (양쪽)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="tuesday">
+                    <h3>화요일: 등 + 이두 + 코어</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 워밍업 (6:25-6:40)</h4>
+                        <ol>
+                            <li><strong>고양이-소 스트레칭</strong>: 10회 (척추 유연성)</li>
+                            <li><strong>어깨 블레이드 스퀴즈</strong>: 15회 (견갑골 활성화)</li>
+                            <li><strong>랫 스트레칭</strong>: 양쪽 각 15초 (광배근 스트레칭)</li>
+                            <li><strong>팔 오버헤드 스트레칭</strong>: 양쪽 각 15초 (이두, 삼두 스트레칭)</li>
+                            <li><strong>가벼운 밴드 풀</strong>: 15-20회 (등 근육 워밍업)</li>
+                            <li><strong>팔 회전</strong>: 각 방향 15회 (어깨 관절 워밍업)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>본 운동 (6:40-7:45)</h4>
+                        <ol>
+                            <li><strong>데드리프트</strong>: 5세트 x 5-6회</li>
+                            <li><strong>가슴 지지 덤벨 로우</strong>: 4세트 x 8-10회</li>
+                            <li><strong>랫 풀다운</strong>: 4세트 x 8-10회</li>
+                            <li><strong>바벨 컬</strong>: 4세트 x 8-10회</li>
+                            <li><strong>해머 컬</strong>: 3세트 x 10-12회</li>
+                            <li><strong>코어 운동</strong>:
+                                <ul>
+                                    <li><strong>행잉 레그 레이즈</strong>: 3세트 x 12-15회</li>
+                                    <li><strong>사이드 플랭크</strong>: 3세트 x 30초 (양쪽)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="wednesday">
+                    <h3>수요일: 하체 + 코어</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 워밍업 (6:25-6:40)</h4>
+                        <ol>
+                            <li><strong>발목 회전</strong>: 각 방향 10회씩 (발목 관절 워밍업)</li>
+                            <li><strong>다이나믹 런지</strong>: 양쪽 각 10회 (고관절 워밍업)</li>
+                            <li><strong>스쿼트 스트레칭</strong>: 10회 (엉덩이, 허벅지 워밍업)</li>
+                            <li><strong>햄스트링 스트레칭</strong>: 양쪽 각 15초 (허벅지 뒤쪽 스트레칭)</li>
+                            <li><strong>카프 스트레칭</strong>: 양쪽 각 15초 (종아리 스트레칭)</li>
+                            <li><strong>힙 서클</strong>: 각 방향 10회 (고관절 워밍업)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>본 운동 (6:40-7:45)</h4>
+                        <ol>
+                            <li><strong>바벨 스쿼트</strong>: 5세트 x 6-8회</li>
+                            <li><strong>레그 프레스</strong>: 4세트 x 10-12회</li>
+                            <li><strong>루마니안 데드리프트</strong>: 4세트 x 8-10회</li>
+                            <li><strong>레그 익스텐션</strong>: 3세트 x 12-15회</li>
+                            <li><strong>레그 컬</strong>: 3세트 x 12-15회</li>
+                            <li><strong>코어 운동</strong>:
+                                <ul>
+                                    <li><strong>크런치</strong>: 3세트 x 15-20회</li>
+                                    <li><strong>슈퍼맨 홀드</strong>: 3세트 x 30초 (등 하부 강화)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="thursday">
+                    <h3>목요일: 어깨 + 트랩 + 코어</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 워밍업 (6:25-6:40)</h4>
+                        <ol>
+                            <li><strong>목 스트레칭</strong>: 4방향 각 15초 (목 근육 이완)</li>
+                            <li><strong>어깨 롤</strong>: 앞/뒤 각 15회 (어깨 관절 워밍업)</li>
+                            <li><strong>체스트 오픈</strong>: 15초 x 3회 (가슴, 어깨 전면 스트레칭)</li>
+                            <li><strong>삼각근 스트레칭</strong>: 양쪽 각 15초 (어깨 스트레칭)</li>
+                            <li><strong>가벼운 측면 레이즈</strong>: 12-15회 (삼각근 워밍업)</li>
+<li><strong>로테이터 커프 워밍업</strong>: 외/내회전 각 10회 (어깨 안정화)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>본 운동 (6:40-7:45)</h4>
+                        <ol>
+                            <li><strong>바벨 숄더 프레스</strong>: 5세트 x 6-8회</li>
+                            <li><strong>덤벨 래터럴 레이즈</strong>: 4세트 x 10-12회</li>
+                            <li><strong>페이스 풀</strong>: 4세트 x 12-15회</li>
+                            <li><strong>리어 델트 플라이</strong>: 3세트 x 12-15회</li>
+                            <li><strong>바벨 슈러그</strong>: 4세트 x 10-12회</li>
+                            <li><strong>코어 운동</strong>:
+                                <ul>
+                                    <li><strong>마운틴 클라이머</strong>: 3세트 x 20회 (양쪽)</li>
+                                    <li><strong>버드 독</strong>: 3세트 x 10회 (균형 및 코어 안정화)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="friday">
+                    <h3>금요일: 전신 파워 + 코어</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 워밍업 (6:25-6:40)</h4>
+                        <ol>
+                            <li><strong>전신 스트레칭</strong>: 위에서 아래로 각 관절 활성화</li>
+                            <li><strong>점프 스쿼트</strong>: 10회 (하체 및 심폐 워밍업)</li>
+                            <li><strong>암 서클</strong>: 앞/뒤 각 10회 (어깨 관절 워밍업)</li>
+                            <li><strong>다이나믹 런지 트위스트</strong>: 양쪽 각 8회 (고관절, 코어 워밍업)</li>
+                            <li><strong>인치웜</strong>: 8-10회 (전신 스트레칭)</li>
+                            <li><strong>버피 라이트</strong>: 5-8회 (전신 워밍업)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>본 운동 (6:40-7:45)</h4>
+                        <ol>
+                            <li><strong>파워 클린</strong>: 4세트 x 5-6회</li>
+                            <li><strong>풀업</strong>: 3세트 x 최대 반복</li>
+                            <li><strong>덤벨 런지</strong>: 3세트 x 10-12회 (양쪽)</li>
+                            <li><strong>약점 부위 집중 운동 1</strong>: 4세트 x 8-10회</li>
+                            <li><strong>약점 부위 집중 운동 2</strong>: 4세트 x 8-10회</li>
+                            <li><strong>코어 운동</strong>:
+                                <ul>
+                                    <li><strong>ab 롤아웃</strong>: 3세트 x 10-12회</li>
+                                    <li><strong>우드 초퍼</strong>: 3세트 x 12회 (양쪽)</li>
+                                    <li><strong>플랭크 숄더 탭</strong>: 3세트 x 10회 (양쪽)</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="saturday">
+                    <h3>토요일: 활동적 휴식 + 모빌리티</h3>
+                    
+                    <div class="workout-section">
+                        <h4>스트레칭 & 모빌리티 (아침 30-40분)</h4>
+                        <ol>
+                            <li><strong>폼 롤러 전신</strong>: 각 부위 30-60초
+                                <ul>
+                                    <li>등 상부/하부</li>
+                                    <li>IT 밴드 (허벅지 외측)</li>
+                                    <li>대퇴사두근 (허벅지 전면)</li>
+                                    <li>햄스트링 (허벅지 후면)</li>
+                                    <li>종아리</li>
+                                </ul>
+                            </li>
+                            <li><strong>정적 스트레칭</strong>: 각 자세 30초 유지
+                                <ul>
+                                    <li>햄스트링 스트레칭</li>
+                                    <li>고관절 굴곡근 스트레칭</li>
+                                    <li>가슴/어깨 스트레칭</li>
+                                    <li>등/광배근 스트레칭</li>
+                                    <li>목/승모근 스트레칭</li>
+                                </ul>
+                            </li>
+                            <li><strong>관절 모빌리티</strong>:
+                                <ul>
+                                    <li>고관절 360도 회전</li>
+                                    <li>어깨 관절 원 그리기</li>
+                                    <li>발목 모빌리티</li>
+                                    <li>척추 회전</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="workout-section">
+                        <h4>가벼운 활동</h4>
+                        <p>20-30분 걷기 또는 가벼운 조깅</p>
+                    </div>
+                </div>
+                
+                <div class="workout-tab-content" id="sunday">
+                    <h3>일요일: 완전 휴식 + 식사 준비</h3>
+                    
+                    <div class="workout-section">
+                        <h4>주간 식품 준비</h4>
+                        <ol>
+                            <li>닭가슴살 1.5kg 오븐에 구워 밀폐용기에 보관 (5-7일분)</li>
+                            <li>파스타 3-4일치 미리 삶아서 올리브 오일과 섞어 보관</li>
+                            <li>계란 15-20개 삶아서 냉장 보관</li>
+                            <li>단백질 쉐이크 준비 (파우더 미리 쉐이커에 담아두기)</li>
+                            <li>스터프라이 소스 미리 만들어 냉장 보관</li>
+                            <li>브로콜리와 시금치 씻어서 썰어 밀폐용기에 보관</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="daily-schedule">
+            <h2>일일 시간표</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <span class="time">6:00</span>
+                    <span class="activity">기상</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">6:10</span>
+                    <span class="activity">운동 전 간식 (단백질 쉐이크 + 바나나 반개)</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">6:25-6:40</span>
+                    <span class="activity">스트레칭 & 워밍업</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">6:40-7:45</span>
+                    <span class="activity">본 운동</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">8:00</span>
+                    <span class="activity">아침 식사</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">12:30</span>
+                    <span class="activity">점심</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">19:00</span>
+                    <span class="activity">저녁</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">21:30-22:00</span>
+                    <span class="activity">취침</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="meal-plan">
+            <h2>식단 계획 (매일 동일)</h2>
+            <div class="meal-tabs">
+                <button class="tab-btn active" data-meal="pre-workout">운동 전 간식</button>
+                <button class="tab-btn" data-meal="breakfast">아침 식사</button>
+                <button class="tab-btn" data-meal="lunch">점심</button>
+                <button class="tab-btn" data-meal="dinner">저녁</button>
+            </div>
+            
+            <div class="meal-content">
+                <div class="meal-tab-content active" id="pre-workout">
+                    <h3>운동 전 간식 (6:10)</h3>
+                    <ul>
+                        <li>단백질 쉐이크 1스쿱 (물 250ml에 섞기)</li>
+                        <li>바나나 반개 (빠른 에너지원)</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-tab-content" id="breakfast">
+                    <h3>아침 식사 (8:00, 운동 후)</h3>
+                    <ul>
+                        <li>계란 3개 (삶거나 스크램블)</li>
+                        <li>통곡물 파스타 100g (삶은 것)</li>
+                        <li>칼슘-마그네슘 종합비타민 1정</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-tab-content" id="lunch">
+                    <h3>점심 (12:30)</h3>
+                    <ul>
+                        <li>닭가슴살 180g (구운 것)</li>
+                        <li>통곡물 파스타 100g + 브로콜리, 시금치, 마늘 스터프라이</li>
+                        <li>올리브 오일 1작은술</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-tab-content" id="dinner">
+                    <h3>저녁 (19:00)</h3>
+                    <ul>
+                        <li>닭가슴살 180g (구운 것)</li>
+                        <li>통곡물 파스타 80g + 브로콜리, 시금치, 마늘 스터프라이</li>
+                        <li>올리브 오일 1작은술</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="stir-fry-recipe">
+            <h2>간단한 야채 스터프라이 조리법</h2>
+            
+            <div class="recipe-container">
+                <div class="ingredients">
+                    <h3>기본 스터프라이 소스</h3>
+                    <ul>
+                        <li>간장 1/4컵</li>
+                        <li>물 1/4컵</li>
+                        <li>꿀 또는 황설탕 2큰술</li>
+                        <li>참기름 1작은술</li>
+                        <li>다진 마늘 2쪽</li>
+                        <li>다진 생강 1작은술 (선택사항)</li>
+                        <li>옥수수 전분 1큰술</li>
+                    </ul>
+                </div>
+                
+                <div class="cooking-method">
+                    <h3>조리 방법</h3>
+                    <ol>
+                        <li>큰 팬이나 웍에 올리브 오일 2큰술을 두르고 중불-강불로 가열한다</li>
+                        <li>팬이 매우 뜨거워지면 다진 마늘을 넣고 30초간 볶는다</li>
+                        <li>브로콜리를 넣고 1분간 볶는다 (밝은 녹색으로 변하기 시작할 때까지)</li>
+                        <li>시금치를 넣고 1-2분간 더 볶는다</li>
+                        <li>소스 재료를 모두 작은 그릇에 섞어 준비해둔다</li>
+                        <li>야채가 원하는 정도로 익으면 소스를 부어 끓기 시작할 때까지 저어가며 볶는다</li>
+                        <li>소스가 걸쭉해지고 윤기가 나면 불을 끈다</li>
+                    </ol>
+                    
+                    <div class="tips">
+                        <h3>팁</h3>
+                        <ul>
+                            <li>야채는 비슷한 크기로 자르면 고르게 익는다</li>
+                            <li>단단한 야채(브로콜리)를 먼저 넣고, 부드러운 야채(시금치)를 나중에 넣는다</li>
+                            <li>스터프라이는 빠른 조리 과정이므로 모든 재료를 미리 준비해두는 것이 좋다</li>
+                            <li>야채 스터프라이는 밀폐 용기에 담아 냉장고에서 최대 4일까지 보관 가능하다</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="practical-tips">
+            <h2>실용적인 팁</h2>
+            
+            <div class="tips-container">
+                <div class="tip-category">
+                    <h3>야채 준비 및 보관 팁</h3>
+                    <ol>
+                        <li>야채는 단단한 것(브로콜리)과 부드러운 것(시금치)으로 구분해 보관한다</li>
+                        <li>브로콜리는 작은 크기로 자르면 빨리 익는다</li>
+                        <li>스터프라이 소스는 최대 3일 전에 미리 만들어 냉장 보관할 수 있다</li>
+                        <li>스터프라이 조리 시 3F 원칙을 기억하자: 불(Fire), 기름(Fat), 음식(Food)</li>
+                    </ol>
+                </div>
+                
+                <div class="tip-category">
+                    <h3>아침 운동 효율화</h3>
+                    <ol>
+                        <li>운동복과 운동화를 침대 옆에 준비</li>
+                        <li>운동 전 간식과 물병을 전날 밤에 준비</li>
+                        <li>스트레칭 루틴을 벽에 붙여두거나 휴대폰에 저장하여 쉽게 따라할 수 있게 준비</li>
+                        <li>운동 시간을 정확히 지키기 위해 타이머 설정</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
