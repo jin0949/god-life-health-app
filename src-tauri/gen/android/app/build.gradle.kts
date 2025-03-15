@@ -1,4 +1,6 @@
 import java.util.Properties
+import java.io.FileInputStream
+
 
 plugins {
     id("com.android.application")
@@ -12,6 +14,10 @@ val tauriProperties = Properties().apply {
         propFile.inputStream().use { load(it) }
     }
 }
+
+val keystorePropertiesFile = rootProject.file("keystore.properties")
+val keystoreProperties = Properties()
+keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdk = 34
@@ -44,12 +50,23 @@ android {
                     .toList().toTypedArray()
             )
         }
+        release {
+            signingConfig = signingConfigs.getByName("release")
+        }
     }
     kotlinOptions {
         jvmTarget = "1.8"
     }
     buildFeatures {
         buildConfig = true
+    }
+    signingConfigs {
+        create("release") {
+            keyAlias = keystoreProperties["keyAlias"] as String
+            keyPassword = keystoreProperties["keyPassword"] as String
+            storeFile = file(keystoreProperties["storeFile"] as String)
+            storePassword = keystoreProperties["storePassword"] as String
+        }
     }
 }
 
