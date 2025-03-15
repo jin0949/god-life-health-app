@@ -10,7 +10,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "god-life",
+        "title": "갓생 헬스",
         "width": 800,
         "height": 600
       }
